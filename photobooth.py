@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# EXECUTE THIS FILE LIKE THIS:
+# > sudo python photobooth.py
+
 from time import sleep
 
 import os
