@@ -12,8 +12,8 @@ import RPi.GPIO as GPIO
 import glob
 import sys
 
-bounceMillis = 800
-fps = 0;
+bounceMillis = 800 #waits 800 ms before noticing another button press
+fps = 0; #frames per second
 photos_taken = 0
 index = 0
 width = 1280
@@ -24,12 +24,12 @@ image_name = ""
 delay_time = .005
 flash_time = .1
 last_image_taken = ""
-waiting_on_download = False
+waiting_on_download = False #if this is true, look for last_image_taken 
 
 current_image = 0
 in_process = False
 image_count = 0;
-object_list = []
+object_list = [] #list of preloaded images
 change_ticks = 0
 last_image_number = 0
 last_preview = {}
@@ -424,7 +424,8 @@ for file in file_list:
     print file
     DrawCenterMessage("LOADING: " + str(index + 1) + "/" +str(len(file_list)),500,70,((width/2)-220),((height)-100))
 
-    if index < 20: #REMOVE LATER
+    #REMOVE THIS RESTRICTION AFTER TESTING
+    if index < 20: #REMOVE LATER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         LoadImageToObjectList(file)
         NextPicture()
     
@@ -459,7 +460,7 @@ try:
 
         #preview
         DrawPreview()
-        #DrawMetrics()
+        DrawMetrics()
 
         index = index +1
 
