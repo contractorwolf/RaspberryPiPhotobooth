@@ -313,7 +313,7 @@ def LoadNewImage():
     print "capture added to screen: " + str(pygame.time.get_ticks())
 
     #-------------------------------------------------------------
-    # ONLY UNCOMMENT THE NEXT LINE OF CODEIF YOU HAVE CONFIGURED 
+    # ONLY UNCOMMENT THE NEXT LINE OF CODE IF YOU HAVE CONFIGURED 
     # upload.py TO WORK WITH YOUR GOOGLE DRIVE ACCOUNT
     #os.system("sudo python upload.py " + last_image_taken)
     #-------------------------------------------------------------
