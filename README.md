@@ -2,6 +2,7 @@ Raspberry Pi Photobooth Project
 =====================
 
 Here is my blog post with full instructions, pictures and a circuit diagram:
+
 http://contractorwolf.com/raspberry-pi-high-def-photobooth/
 
 This photobooth needs a folder called "/images" in the same path as the photobooth.py file, my version also has 4 buttons connected from a 315mhx receiver to operate.  Since the 315mhz outputs 5v and the RPI can only take 3v I have the lines running through 4 optoisolators and only the 3v from the RPi are run into the optoisolators.
