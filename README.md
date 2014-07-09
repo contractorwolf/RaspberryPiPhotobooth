@@ -7,7 +7,7 @@ http://contractorwolf.com/raspberry-pi-high-def-photobooth/
 
 This photobooth needs a folder called "/images" in the same path as the photobooth.py file, my version also has 4 buttons connected from a 315mhx receiver to operate.  Since the 315mhz outputs 5v and the RPI can only take 3v I have the lines running through 4 optoisolators and only the 3v from the RPi are run into the optoisolators.
 
-You must also have PyGame and GPhoto2 installed at the minimum, and my full notes are here:
+You must also have PyGame and GPhoto2 installed at the minimum, and my full notes (sorry, they are rough) are here:
 
 This project aim to replicate the functionality of a photobooth screen with the hardware of a Raspberry Pi and some other custom parts for wireless control and updating the cameras usage based on whether a person is standing in front of the screen or not.
 
