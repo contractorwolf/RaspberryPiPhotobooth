@@ -74,11 +74,16 @@ https://developers.google.com/drive/web/quickstart/quickstart-python
 
 IMPORTANT: 
 sudo apt-get install python-setuptools
+
 (installs easy_install, and other tools)
+
 sudo easy_install --upgrade google-api-python-client
+
 (needs first step to install east_install to run second step)
 
-
+------------------------------------------------
+ADDITIONAL NOTES AND LINKS TO OTHER USEFUL PAGES BELOW
+------------------------------------------------
 
 To do:
 CAPTURE
